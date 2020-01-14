@@ -57,7 +57,6 @@ header("Location: doctor/doctordashboard.php");
                             <input name="doctorId" type="text" placeholder="Doctor ID" required>
                             <input name="password" type="password" placeholder="Password" required>
                             <button class="btn btn-info btn-block login" type="submit" name="login">Login</button>
-                            <button class="btn btn-info btn-block login" type="submit" name="login">Login</button>
                         </form>
                     </div>
                 </div>
