@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `doctor` (
 --
 
 INSERT INTO `doctor` (`icDoctor`, `password`, `doctorId`, `doctorFirstName`, `doctorLastName`, `doctorAddress`, `doctorPhone`, `doctorEmail`, `doctorDOB`) VALUES
-(123456789, '123', 123, 'Mohd', 'Mazlan', 'kuala lumpur', '0173567758', 'lan.psis@gmail.com', '1990-04-10');
+(768956900, '0768956900@Sl', 0768956900@Sl, 'paucho', 'smith', 'david mabuza', '0173567758', 'company11@gmail.com', '1990-04-10');
 
 -- --------------------------------------------------------
 

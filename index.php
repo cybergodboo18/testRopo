@@ -112,14 +112,14 @@ alert('User already registered. Please try again');
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
+                    
+                    
                     <ul class="nav navbar-nav navbar-right">
-
+                        
 
                         <!-- <li><a href="adminlogin.php">Admin</a></li> -->
                         <li><a href="#" data-toggle="modal" data-target="#myModal">Sign Up</a></li>
-
+                   
                         <li>
                             <p class="navbar-text">Already have an account?</p>
                         </li>
@@ -129,7 +129,7 @@ alert('User already registered. Please try again');
                                 <li>
                                     <div class="row">
                                         <div class="col-md-12">
-
+                                            
                                             <form class="form" role="form" method="POST" accept-charset="UTF-8" >
                                                 <div class="form-group">
                                                     <label class="sr-only" for="icPatient">Email</label>
@@ -165,12 +165,12 @@ alert('User already registered. Please try again');
                     </div>
                     <!-- modal body start -->
                     <div class="modal-body">
-
+                        
                         <!-- form start -->
                         <div class="container" id="wrap">
                             <div class="row">
                                 <div class="col-md-6">
-
+                                    
                                     <form action="<?php $_PHP_SELF ?>" method="POST" accept-charset="utf-8" class="form" role="form">
                                         <h4>It's free and always will be.</h4>
                                         <div class="row">
@@ -181,17 +181,17 @@ alert('User already registered. Please try again');
                                                 <input type="text" name="patientLastName" value="" class="form-control input-lg" placeholder="Last Name" required />
                                             </div>
                                         </div>
-
+                                        
                                         <input type="text" name="patientEmail" value="" class="form-control input-lg" placeholder="Your Email"  required/>
                                         <input type="number" name="icPatient" value="" class="form-control input-lg" placeholder="Your IC Number"  required/>
-
-
+                                        
+                                        
                                         <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  required/>
-
+                                        
                                         <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  required/>
                                         <label>Birth Date</label>
                                         <div class="row">
-
+                                            
                                             <div class="col-xs-4 col-md-4">
                                                 <select name="month" class = "form-control input-lg" required>
                                                     <option value="">Month</option>
@@ -248,7 +248,7 @@ alert('User already registered. Please try again');
                                             <div class="col-xs-4 col-md-4">
                                                 <select name="year" class = "form-control input-lg" required>
                                                     <option value="">Year</option>
-
+                                                    
                                                     <option value="1981">1981</option>
                                                     <option value="1982">1982</option>
                                                     <option value="1983">1983</option>
@@ -294,10 +294,10 @@ alert('User already registered. Please try again');
                                         </label>
                                         <br />
                                         <span class="help-block">By clicking Create my account, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
-
+                                        
                                         <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit" name="signup" id="signup">Create my account</button>
                                     </form>
-
+                                    
                                 </div>
                             </div>
                         </div>
@@ -315,9 +315,9 @@ alert('User already registered. Please try again');
                     <div class="col-md-5">
                         <h2>Make appointment today!</h2>
                         <p>This is Doctor's Schedule. Please <span class="label label-danger">login</span> to make an appointment. </p>
-
+                            
                         <!-- date textbox -->
-
+                       
                         <div class="input-group" style="margin-bottom:10px;">
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar">
@@ -325,18 +325,18 @@ alert('User already registered. Please try again');
                             </div>
                             <input class="form-control" id="date" name="date" value="<?php echo date("Y-m-d")?>" onchange="showUser(this.value)"/>
                         </div>
-
+                       
                         <!-- date textbox end -->
 
                         <!-- script start -->
                         <script>
 
                             function showUser(str) {
-
+                                
                                 if (str == "") {
                                     document.getElementById("txtHint").innerHTML = "";
                                     return;
-                                } else {
+                                } else { 
                                     if (window.XMLHttpRequest) {
                                         // code for IE7+, Firefox, Chrome, Opera, Safari
                                         xmlhttp = new XMLHttpRequest();
@@ -355,12 +355,12 @@ alert('User already registered. Please try again');
                                 }
                             }
                         </script>
-
+                        
                         <!-- script start end -->
-
+                     
                         <!-- table appointment start -->
                         <div id="txtHint"><b> </b></div>
-
+                        
                         <!-- table appointment end -->
                     </div>
                     <!-- /.col -->
@@ -376,14 +376,93 @@ alert('User already registered. Please try again');
         </section>
         <!-- first section end -->
 
-
+        
         <!-- second section start -->
-
+        
         <!-- second section end -->
         <!-- third section start -->
-
+        
         <!-- third section end -->
         <!-- forth sections start -->
+        <section id="content-1-9" class="content-1-9 content-block">
+            <div class="container">
+                <div class="underlined-title">
+                    <h1>Get in Touch</h1>
+                    <hr>
+                    <h2>Feel free to drop us a line to contact us</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-pencil"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Branding</h4>
+                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-code"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Web Design</h4>
+                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-comments-o"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Social Marketing</h4>
+                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-search"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>SEO</h4>
+                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-mobile"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Mobile Apps</h4>
+                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
+                        <div class="col-xs-2">
+                            <span class="fa fa-bookmark"></span>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4>Corporate Literture</h4>
+                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- forth section end -->
+        <!-- footer start -->
+        <div class="copyright-bar bg-black">
+            <div class="container">
+                <p class="pull-left small">© mohd mazlan - codedesign</p>
+                <p class="pull-right small"><a href="adminlogin.php">admin</a></p>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/date/bootstrap-datepicker.js"></script>
     <script src="assets/js/moment.js"></script>
     <script src="assets/js/transition.js"></script>
@@ -396,7 +475,7 @@ alert('User already registered. Please try again');
     })
     </script>
     <!-- date start -->
-
+  
 <script>
     $(document).ready(function(){
         var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -413,6 +492,6 @@ alert('User already registered. Please try again');
 </script>
 
     <!-- date end -->
-
+   
 </body>
 </html>
